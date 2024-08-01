@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaker Website</title>
+  </head>
+  <body>
+    <nav>
+      <a href="https://ryanmambou.dev/">Code by Ryan Mambou</a
+      ><a href="https://github.com/Ryan-Mambou">Github</a
+      ><a
+        href="https://www.figma.com/file/5Nq4P3JBhPPpFaLMlhAcnA/Sneaker-Swipe-Prototype-(Community)?type=design&node-id=8%3A1576&mode=design&t=FlQjrxBl0TnV877Z-1"
+        >Design bu EmaniUI</a
+      >
+    </nav>
+    <div class="main-content">
+      <div class="slider-buttons">
+        <span class="button-one">1</span><span class="button-two">2</span>
+      </div>
+      <div class="main-content-wrapper">
+        <div class="shoe-details left-one">
+          <div>
+            <h2>Nike Dunk Low</h2>
+            <p>Chaussure homme</p>
+            <div class="prices"><span>$120</span><span>$130</span></div>
+          </div>
+          <div>
+            <img src="public/assets/images/multi-image.svg" alt="multi-image" />
+          </div>
+        </div>
+        <div class="shoe-details left-two">
+          <div>
+            <h2>Nike Air Max Plus</h2>
+            <p>Chaussure homme</p>
+            <div class="prices"><span>$140</span><span>$190</span></div>
+          </div>
+          <div>
+            <img src="public/assets/images/multi-image.svg" alt="multi-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="middle-image-wrapper">
+        <div class="middle-image middle-one">
+          <img
+            src="public/assets/images/dunk-low-red.png"
+            alt="shoe-image"
+            class="shoe-image shoe-image-1"
+          />
+          <img
+            src="public/assets/images/dunk-low-black.png"
+            alt="shoe-image"
+            class="shoe-image shoe-image-2 hide-shoe"
+          />
+          <img
+            src="public/assets/images/dunk-low-pink.png"
+            alt="shoe-image"
+            class="shoe-image shoe-image-3 hide-shoe"
+          />
+          <img
+            src="public/assets/images/dunk-low-blue.png"
+            alt="shoe-image"
+            class="shoe-image shoe-image-4 hide-shoe"
+          />
+        </div>
+
+        <div class="middle-image middle-two">
+          <img
+            src="public/assets/images/airmax.png"
+            alt="shoe-image"
+            class=""
+          />
+        </div>
+      </div>
+
+      <div class="main-content-wrapper">
+        <div class="shoe-picker right-one">
+          <div>
+            <h5>Size</h5>
+            <div class="sizes">
+              <div class="size">33</div>
+              <div class="size">35</div>
+              <div class="size">37</div>
+              <div class="size">39</div>
+              <div class="size">41</div>
+            </div>
+          </div>
+          <div>
+            <h5>Select color</h5>
+            <div class="shoe-choices shoe-choices-one">
+              <div class="shoe-choice shoe-choice-1" id="red-shoe">
+                <img src="public/assets/images/dunk-low-red.png" alt="shoe" />
+              </div>
+              <div class="shoe-choice shoe-choice-2" id="black-shoe">
+                <img src="public/assets/images/dunk-low-black.png" alt="shoe" />
+              </div>
+              <div class="shoe-choice shoe-choice-3" id="pink-shoe">
+                <img src="public/assets/images/dunk-low-pink.png" alt="shoe" />
+              </div>
+              <div class="shoe-choice shoe-choice-4" id="blue-shoe">
+                <img src="public/assets/images/dunk-low-blue.png" alt="shoe" />
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button>Ajouter au panier</button>
+            <button>Ajouter au favoris</button>
+          </div>
+        </div>
+        <div class="shoe-picker right-two">
+          <div>
+            <h5>Size</h5>
+            <div class="sizes">
+              <div class="size">33</div>
+              <div class="size">35</div>
+              <div class="size">37</div>
+              <div class="size">39</div>
+              <div class="size">41</div>
+            </div>
+          </div>
+          <div>
+            <h5>Select color</h5>
+            <div class="shoe-choices shoe-choices-two">
+              <div>
+                <img src="public/assets/images/airmax.png" alt="shoe" />
+              </div>
+              <div>
+                <img src="public/assets/images/airmax.png" alt="shoe" />
+              </div>
+              <div>
+                <img src="public/assets/images/airmax.png" alt="shoe" />
+              </div>
+              <div>
+                <img src="public/assets/images/airmax.png" alt="shoe" />
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button>Ajouter au panier</button>
+            <button>Ajouter au favoris</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>

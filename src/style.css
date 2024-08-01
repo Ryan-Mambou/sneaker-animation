@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+nav {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
+}
+nav a {
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+body {
+  background-color: #ededed;
+  overflow: hidden;
+  height: 100vh;
+}
+body .main-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 150px;
+}
+body .main-content .main-content-wrapper {
+  position: relative;
+  width: 400px;
+}
+body .main-content .slider-buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3%;
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 3rem;
+  gap: 8px;
+  z-index: 999;
+}
+body .main-content .slider-buttons span {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body .left-two {
+  transform: translateX(-500px);
+  opacity: 0;
+}
+body .middle-two {
+  transform: translate(800px, -800px) rotate(90deg);
+  opacity: 0;
+}
+body .right-two {
+  transform: translateX(500px);
+  opacity: 0;
+}
+body .shoe-details {
+  position: absolute;
+  top: 0px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-shrink: 0;
+}
+body .shoe-details div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .shoe-details h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+body .shoe-details .prices {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  font-size: 32px;
+}
+body .shoe-details .prices span {
+  font-weight: 600;
+}
+body .shoe-details .prices span:nth-child(2) {
+  color: #a0a0a0;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+body .middle-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .middle-image-wrapper .middle-image {
+  position: absolute;
+  width: 100%;
+}
+body .middle-image-wrapper .middle-image img {
+  cursor: pointer;
+  width: 100%;
+}
+body .shoe-picker {
+  position: absolute;
+  top: 0px;
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+body .shoe-picker h5 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+body .shoe-picker .sizes {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+body .shoe-picker .sizes .size {
+  border-radius: 100%;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+body .shoe-picker .sizes .size:nth-child(1) {
+  color: white;
+  background-color: black;
+}
+body .shoe-picker .shoe-choices {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto auto;
+}
+body .shoe-picker .shoe-choices div {
+  width: 120px;
+  height: 80.6px;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+body .shoe-picker .shoe-choices div img {
+  width: 100%;
+  height: 100%;
+}
+body .shoe-picker .shoe-choices-one div:first-child {
+  border: 2px solid red;
+}
+body .shoe-picker .shoe-choices-two div {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+body .shoe-picker .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+body .shoe-picker .buttons button {
+  border: 1px solid black;
+  border-radius: 3rem;
+  padding: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+body .shoe-picker .buttons button:nth-child(1) {
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.hide-shoe {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
